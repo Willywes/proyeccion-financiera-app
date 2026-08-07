@@ -1,0 +1,16 @@
+{
+  "//": "Compila sólo la lógica de dominio a CommonJS para poder correrla en Node. Lo usa `npm run test:domain`. No participa del build de la app, que va por Metro y Babel.",
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node10",
+    "ignoreDeprecations": "6.0",
+    "target": "es2022",
+    "lib": ["es2022"],
+    "strict": true,
+    "rootDir": "src/domain",
+    "outDir": ".domain-build",
+    "skipLibCheck": true,
+    "types": []
+  },
+  "include": ["src/domain/**/*.ts"]
+}
